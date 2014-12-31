@@ -13,6 +13,9 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'othree/xml.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -22,6 +25,13 @@ filetype plugin indent on    " required
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 " :PluginUpdate     - updates current plugins 
+
+
+" ********** PLUGIN CONFIGS **********
+
+let g:vim_markdown_folding_disabled=1
+let g:mustache_abbreviations = 1
+
 
 " ********** VIMRC CONFIGS **********
 
@@ -99,6 +109,7 @@ set background=dark " When set to "dark", Vim will try to use colors that look
                     " Any other value is illegal.
  
 set mouse=a         " Enable the use of the mouse.
- 
+
+
 filetype plugin indent on
 syntax on
