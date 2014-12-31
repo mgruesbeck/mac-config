@@ -1,45 +1,4 @@
-" ********** VUNDLE CONFIGS **********
-
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'Townk/vim-autoclose'
-Plugin 'othree/xml.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'mustache/vim-mustache-handlebars'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-"
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-" :PluginUpdate     - updates current plugins 
-
-
-" ********** PLUGIN CONFIGS **********
-
-let g:vim_markdown_folding_disabled=1
-let g:mustache_abbreviations = 1
-
-
 " ********** VIMRC CONFIGS **********
-
-" .vimrc
-" See: http://vimdoc.sourceforge.net/htmldoc/options.html for details
-
-" For multi-byte character support (CJK support, for example):
-"set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,gb18030,latin1
        
 set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
  
@@ -110,6 +69,41 @@ set background=dark " When set to "dark", Vim will try to use colors that look
  
 set mouse=a         " Enable the use of the mouse.
 
-
 filetype plugin indent on
 syntax on
+
+
+" ********** VUNDLE CONFIGS **********
+
+set nocompatible              " be iMproved, required
+
+" Set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Plugins
+Plugin 'Townk/vim-autoclose'
+Plugin 'othree/xml.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'mustache/vim-mustache-handlebars'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+" :PluginUpdate     - updates current plugins 
+
+
+" ********** PLUGIN CONFIGS **********
+
+let g:vim_markdown_folding_disabled = 1
+let g:mustache_abbreviations = 1
+let g:mustache_operators = 0
