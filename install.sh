@@ -33,6 +33,7 @@ brew cask install google-chrome
 brew cask install google-drive
 brew cask install slack
 brew cask install spectacle
+brew cask install wireshark
 
 #install and configure git
 brew install git
