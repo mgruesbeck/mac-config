@@ -24,9 +24,14 @@ brew install node
 #npm installs
 npm install bower -g
 
-#install zsh and oh-my-zsh
-brew install zsh zsh-completions
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+#install via cask
+brew cask install firefox
+brew cask install flux
+brew cask install gnucash 
+brew cask install google-chrome
+brew cask install google-drive
+brew cask install slack
+brew cask install spectacle
 
 #install and configure git
 brew install git
@@ -40,14 +45,10 @@ git config --global user.email "mgruesbeck@gmail.com"
 #pbcopy < ~/.ssh/id_rsa.pub
 #echo 'your public key was copied to your paste board'
 
-#install via cask
-brew cask install firefox
-brew cask install flux
-brew cask install gnucash 
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install slack
-brew cask install spectacle
-
 #install vim vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+#install zsh and oh-my-zsh
+brew install zsh zsh-completions
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
