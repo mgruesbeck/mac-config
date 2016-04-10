@@ -32,9 +32,9 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 brew install git
 git config --global user.name "Melvin Gruesbeck"
 git config --global user.email "mgruesbeck@gmail.com"
-ssh-keygen -t rsa -C "mgruesbeck@gmail.com"
 
 #uncomment if first time setup
+#ssh-keygen -t rsa -C "mgruesbeck@gmail.com"
 #eval "$(ssh-agent -s)"
 #ssh-add ~/.ssh/id_rsa
 #pbcopy < ~/.ssh/id_rsa.pub
