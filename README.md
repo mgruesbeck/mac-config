@@ -1,1 +1,1 @@
-# My dotfiles
+# quickly configre any mac
