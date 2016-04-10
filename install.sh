@@ -33,10 +33,12 @@ brew install git
 git config --global user.name "Melvin Gruesbeck"
 git config --global user.email "mgruesbeck@gmail.com"
 ssh-keygen -t rsa -C "mgruesbeck@gmail.com"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-pbcopy < ~/.ssh/id_rsa.pub
-echo 'your public key was copied to your paste board'
+
+#uncomment if first time setup
+#eval "$(ssh-agent -s)"
+#ssh-add ~/.ssh/id_rsa
+#pbcopy < ~/.ssh/id_rsa.pub
+#echo 'your public key was copied to your paste board'
 
 #install via cask
 brew cask install firefox
