@@ -14,6 +14,7 @@ brew install heroku-toolbelt
 brew install imagemagick
 brew install tig
 brew install tmux
+brew install tree
 brew install weechat
 brew install wget
 brew install youtube-dl
