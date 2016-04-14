@@ -22,8 +22,11 @@ brew install youtube-dl
 brew install node 
 npm install bower -g
 
-#install aws cli
-brew install awscli
+#install python 
+brew install python
+
+#install awscli (AWS recommends pip install)
+pip install awscli
 
 #install via cask
 brew cask install firefox
