@@ -20,7 +20,7 @@ brew install wget
 brew install youtube-dl
 
 #install node + npm 
-brew install node
+brew install homebrew/versions/node4-lts
 
 #npm installs
 npm install bower -g
