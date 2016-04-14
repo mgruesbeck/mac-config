@@ -7,7 +7,6 @@
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
 
 #install via brew 
-brew install awscli
 brew install cmus
 brew install fzf
 brew install heroku-toolbelt
@@ -19,11 +18,12 @@ brew install weechat
 brew install wget
 brew install youtube-dl
 
-#install node + npm 
+#install node + npm + npm packages
 brew install node 
-
-#npm installs
 npm install bower -g
+
+#install aws cli
+brew install awscli
 
 #install via cask
 brew cask install firefox
