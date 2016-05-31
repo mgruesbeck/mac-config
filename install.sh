@@ -17,6 +17,7 @@ brew install tree
 brew install weechat
 brew install wget
 brew install youtube-dl
+brew install httpie
 
 #install node + npm + npm packages
 brew install node 
