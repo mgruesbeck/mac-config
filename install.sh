@@ -35,6 +35,7 @@ brew cask install flux
 brew cask install gnucash 
 brew cask install google-chrome
 brew cask install google-drive
+brew cask install macdown
 brew cask install slack
 brew cask install spectacle
 brew cask install wireshark
