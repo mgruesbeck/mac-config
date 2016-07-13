@@ -94,6 +94,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -103,9 +104,15 @@ call vundle#end()            " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 " :PluginUpdate     - updates current plugins 
 
-
 " ********** PLUGIN CONFIGS **********
 
 let g:vim_markdown_folding_disabled = 1
 let g:mustache_abbreviations = 1
 let g:mustache_operators = 0
+
+autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
