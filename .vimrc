@@ -38,12 +38,16 @@ set backspace=2     " Influences the working of <BS>, <Del>, CTRL-W
                     " and CTRL-U in Insert mode. This is a list of items,
                     " separated by commas. Each item allows a way to backspace
                     " over something.
+                    
+set smartindent     " Turn on smartindent.
+
+set nocindent       " No cindent.
  
-set autoindent      " Copy indent from current line when starting a new line
+set noautoindent    " Do not copy indent from current line when starting a new line
                     " (typing <CR> in Insert mode or when using the "o" or "O"
                     " command).
  
-set textwidth=79    " Maximum width of text that is being inserted. A longer
+set textwidth=150    " Maximum width of text that is being inserted. A longer
                     " line will be broken after white space to get this width.
  
 set formatoptions=c,q,r,t " This is a sequence of letters which describes how
@@ -71,9 +75,7 @@ set term=screen-256color " Enable 256 color.
 
 set mouse=a         " Enable the use of the mouse.
 
-filetype plugin indent on
 syntax on
-
 
 " ********** VUNDLE CONFIGS **********
 
@@ -87,13 +89,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins
-Plugin 'Townk/vim-autoclose'
-Plugin 'othree/xml.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
@@ -106,13 +103,17 @@ call vundle#end()            " required
 
 " ********** PLUGIN CONFIGS **********
 
+" Don't fold
 let g:vim_markdown_folding_disabled = 1
+
+" Allow shorthand
 let g:mustache_abbreviations = 1
-let g:mustache_operators = 0
 
-autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Highlight .hbt as html
+au BufReadPost *.hbt set syntax=html
 
+" Highlight .less as css 
+au BufReadPost *.less set syntax=css
+
+" Toggle NerdTree
+map <C-n> :NERDTreeToggle<CR> 
