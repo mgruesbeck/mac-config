@@ -75,7 +75,7 @@ set term=screen-256color " Enable 256 color.
 
 set mouse=a         " Enable the use of the mouse.
 
-syntax on
+syntax on           " Turn on syntax highlighting
 
 " ********** VUNDLE CONFIGS **********
 
@@ -92,6 +92,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'alvan/vim-closetag'
+Plugin 'maksimr/vim-jsbeautify'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
