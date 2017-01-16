@@ -52,7 +52,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git github osx)
+plugins=(git aws npm)
 
 # User configuration
 
@@ -85,10 +85,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 # enable vim bindings
