@@ -30,6 +30,7 @@ brew install python
 pip install awscli
 
 #install via cask
+brew cask install dash
 brew cask install firefox
 brew cask install flux
 brew cask install gnucash 
