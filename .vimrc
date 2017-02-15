@@ -1,8 +1,8 @@
 " ********** VIMRC CONFIGS **********
        
-set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
+set tabstop=2       " Number of spaces that a <Tab> in the file counts for.
  
-set shiftwidth=4    " Number of spaces to use for each step of (auto)indent.
+set shiftwidth=2    " Number of spaces to use for each step of (auto)indent.
  
 set expandtab       " Use the appropriate number of spaces to insert a <Tab>.
                     " Spaces are used in indents with the '>' and '<' commands
@@ -95,6 +95,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'alvan/vim-closetag'
 Plugin 'maksimr/vim-jsbeautify'
+Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -120,3 +121,13 @@ au BufReadPost *.less set syntax=css
 
 " Toggle NerdTree
 map <C-n> :NERDTreeToggle<CR> 
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
