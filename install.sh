@@ -21,7 +21,7 @@ brew install httpie
 
 #install node + npm + npm packages
 brew install node 
-npm install bower -g
+npm install -g license-checker
 
 #install python 
 brew install python
