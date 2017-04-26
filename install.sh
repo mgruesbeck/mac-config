@@ -10,21 +10,28 @@ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
 brew install cmus
 brew install fzf
 brew install heroku-toolbelt
+brew install httpie
 brew install imagemagick
+brew install jq
 brew install tig
 brew install tmux
 brew install tree
 brew install weechat
 brew install wget
 brew install youtube-dl
-brew install httpie
 
 #install node + npm + npm packages
 brew install node 
+npm install -g babel
+npm install -g babel-eslint
+npm install -g create-react-app
+npm install -g eslint
+npm install -g express-generator
 npm install -g license-checker
+npm install -g react-native-cli
 
 #install python 
-brew install python
+brew install python3
 
 #install awscli (AWS recommends pip install)
 pip install awscli
@@ -33,7 +40,6 @@ pip install awscli
 brew cask install dash
 brew cask install firefox
 brew cask install flux
-brew cask install gnucash 
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install macdown
