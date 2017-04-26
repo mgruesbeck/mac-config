@@ -68,3 +68,5 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 brew install zsh zsh-completions
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
+#move config files to home dir
+cp .bashrc .editorconfig .tmux.conf .vimrc .zshrc ~/
