@@ -23,13 +23,13 @@ brew install youtube-dl
 
 #install node + npm + npm packages
 brew install node 
-yarn install -g babel
-yarn install -g babel-eslint
-yarn install -g create-react-app
-yarn install -g eslint
-yarn install -g express-generator
-yarn install -g license-checker
-yarn install -g react-native-cli
+yarn global add babel
+yarn global add babel-eslint
+yarn global add create-react-app
+yarn global add eslint
+yarn global add express-generator
+yarn global add license-checker
+yarn global add react-native-cli
 
 #install python 
 brew install python3
