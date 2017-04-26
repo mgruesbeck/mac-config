@@ -111,10 +111,4 @@ fi
 # Add Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# Add Vim bindings to Bash
-set -o vi
-
-

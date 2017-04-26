@@ -54,11 +54,10 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git aws npm)
 
-# User configuration
-
+# Export paths
 export PATH="/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
 
+# source oh-my-zsh.sh
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -81,14 +80,6 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="/usr/local/bin:$PATH"
 
-# enable vim bindings
-set -o vi
-
-# alias
+# aliases
 alias vfzf='vi $(fzf)'
