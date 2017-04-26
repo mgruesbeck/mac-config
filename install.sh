@@ -18,17 +18,18 @@ brew install tmux
 brew install tree
 brew install weechat
 brew install wget
+brew install yarn
 brew install youtube-dl
 
 #install node + npm + npm packages
 brew install node 
-npm install -g babel
-npm install -g babel-eslint
-npm install -g create-react-app
-npm install -g eslint
-npm install -g express-generator
-npm install -g license-checker
-npm install -g react-native-cli
+yarn install -g babel
+yarn install -g babel-eslint
+yarn install -g create-react-app
+yarn install -g eslint
+yarn install -g express-generator
+yarn install -g license-checker
+yarn install -g react-native-cli
 
 #install python 
 brew install python3
@@ -37,6 +38,7 @@ brew install python3
 pip install awscli
 
 #install via cask
+brew cask install atom
 brew cask install dash
 brew cask install firefox
 brew cask install flux
