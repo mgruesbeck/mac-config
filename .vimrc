@@ -47,7 +47,7 @@ set noautoindent    " Do not copy indent from current line when starting a new l
                     " (typing <CR> in Insert mode or when using the "o" or "O"
                     " command).
  
-set textwidth=150    " Maximum width of text that is being inserted. A longer
+set textwidth=160    " Maximum width of text that is being inserted. A longer
                     " line will be broken after white space to get this width.
  
 set formatoptions=c,q,r,t " This is a sequence of letters which describes how
@@ -116,6 +116,9 @@ let g:mustache_abbreviations = 1
 " Highlight .hbt as html
 au BufReadPost *.hbt set syntax=html
 
+" Highlight .hbs as html
+au BufReadPost *.hbs set syntax=html
+
 " Highlight .less as css 
 au BufReadPost *.less set syntax=css
 
@@ -126,9 +129,13 @@ map <C-n> :NERDTreeToggle<CR>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
