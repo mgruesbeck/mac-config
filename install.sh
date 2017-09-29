@@ -13,10 +13,7 @@ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
 brew doctor
 brew update
 
-#clean up any old programs
-brew cleanup
-
-#install via brew 
+#install via brew
 brew install ack
 brew install fzf
 brew install httpie
@@ -27,11 +24,11 @@ brew install tree
 brew install wget
 
 #install node + npm + npm packages
-brew install node 
+brew install node
 npm install -g express-generator
 npm install -g license-checker
 
-#install python 
+#install python
 brew install python3
 
 #install awscli (AWS recommends pip install)
@@ -61,7 +58,7 @@ git config --global core.excludesfile ~/.gitignore
 echo .DS_Store >> ~/.gitignore
 
 #install zsh and oh-my-zsh for extra zsh stuff
-brew install zsh 
+brew install zsh
 brew install zsh-completions
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 chsh -s /usr/local/bin/zsh
@@ -72,3 +69,6 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 #update all packages installed via homebrew
 brew update && brew upgrade `brew outdated`
+
+#clean up any old programs
+brew cleanup
