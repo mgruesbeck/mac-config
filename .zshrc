@@ -5,7 +5,7 @@ export ZSH=/Users/mgruesbeck/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pygmalion"
+ZSH_THEME="robbyrussell"
 
 # enable 256 colors in terminal
 export TERM="xterm-256color"
@@ -52,7 +52,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws npm brew osx zsh-syntax-highlighting docker httpie tmux)
+plugins=(git aws npm docker httpie )
 
 # Export paths
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
