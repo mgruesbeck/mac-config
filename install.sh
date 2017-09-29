@@ -17,8 +17,8 @@ brew update
 brew cleanup
 
 #install via brew 
-brew install fzf
 brew install ack
+brew install fzf
 brew install httpie
 brew install jq
 brew install tig
@@ -39,14 +39,15 @@ brew install python3
 pip install awscli
 
 #install via cask
+brew cask install brackets
 brew cask install dash
+brew cask install docker-toolbox
 brew cask install firefox
 brew cask install flux
 brew cask install google-chrome
 brew cask install slack
 brew cask install spectacle
-brew cask install docker-toolbox
-brew cask install brackets
+brew cask install spotify
 
 #install and configure git user
 brew install git
