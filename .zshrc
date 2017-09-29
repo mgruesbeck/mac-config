@@ -52,7 +52,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws npm colored-man colorize brew osx zsh-syntax-highlighting)
+plugins=(git aws npm brew osx zsh-syntax-highlighting docker httpie tmux)
 
 # Export paths
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
