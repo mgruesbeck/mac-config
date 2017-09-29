@@ -25,12 +25,11 @@ brew install tig
 brew install tmux
 brew install tree
 brew install wget
-brew install yarn
 
 #install node + npm + npm packages
 brew install node 
-yarn global add express-generator
-yarn global add license-checker
+npm install -g express-generator
+npm install -g license-checker
 
 #install python 
 brew install python3
@@ -70,3 +69,6 @@ chsh -s /usr/local/bin/zsh
 #install awesome vimrc configs
 git clone https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+#update all packages installed via homebrew
+brew update && brew upgrade `brew outdated`
