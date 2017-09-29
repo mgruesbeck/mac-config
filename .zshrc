@@ -8,7 +8,7 @@ export ZSH=/Users/mgruesbeck/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # enable 256 colors in terminal
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +52,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws npm docker httpie )
+plugins=(git npm docker)
 
 # Export paths
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
