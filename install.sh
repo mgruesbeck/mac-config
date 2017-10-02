@@ -37,7 +37,6 @@ pip install awscli
 #install via cask
 brew cask install brackets
 brew cask install dash
-brew cask install docker-toolbox
 brew cask install firefox
 brew cask install flux
 brew cask install google-chrome
