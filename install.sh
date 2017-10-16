@@ -32,7 +32,7 @@ npm install -g license-checker
 brew install python3
 
 #install awscli (AWS recommends pip install)
-pip install awscli
+brew install awscli
 
 #install via cask
 brew cask install brackets
