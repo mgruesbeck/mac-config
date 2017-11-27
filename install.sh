@@ -22,12 +22,12 @@ brew install tig
 brew install tmux
 brew install tree
 brew install wget
+brew install tldr
 
 #install node + npm + npm packages
 brew install node
 npm install -g express-generator
 npm install -g license-checker
-npm install -g tldr
 
 #install python
 brew install python3
