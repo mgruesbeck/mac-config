@@ -27,6 +27,7 @@ brew install wget
 brew install node
 npm install -g express-generator
 npm install -g license-checker
+npm install -g tldr
 
 #install python
 brew install python3
