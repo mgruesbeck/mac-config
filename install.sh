@@ -28,6 +28,7 @@ brew install tldr
 brew install node
 npm install -g express-generator
 npm install -g license-checker
+npm install -g eslint
 
 #install python
 brew install python3
