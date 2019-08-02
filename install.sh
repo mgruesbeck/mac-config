@@ -37,6 +37,7 @@ brew install python3
 brew install awscli
 
 #install via cask
+brew cask install abstract
 brew cask install dash
 brew cask install docker
 brew cask install firefox
