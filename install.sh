@@ -80,3 +80,6 @@ brew update && brew upgrade `brew outdated`
 
 #clean up any old programs
 brew cleanup
+
+echo defaults write -g ApplePressAndHoldEnabled -bool false
+
