@@ -67,6 +67,10 @@ brew install zsh-completions
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 chsh -s /usr/local/bin/zsh
 
+#configure zsh + tmux
+cp .zshrc ~/
+cp .tmux.conf ~/
+
 #install awesome vimrc configs
 git clone https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_basic_vimrc.sh
