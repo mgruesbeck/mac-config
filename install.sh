@@ -37,17 +37,17 @@ brew install python3
 brew install awscli
 
 #install via cask
-brew cask install abstract
-brew cask install dash
-brew cask install docker
-brew cask install firefox
-brew cask install flux
-brew cask install google-chrome
-brew cask install sketch
-brew cask install slack
-brew cask install spectacle
-brew cask install spotify
-brew cask install visual-studio-code
+brew install --cask abstract
+brew install --cask dash
+brew install --cask docker
+brew install --cask firefox
+brew install --cask flux
+brew install --cask google-chrome
+brew install --cask sketch
+brew install --cask slack
+brew install --cask spectacle
+brew install --cask spotify
+brew install --cask visual-studio-code
 
 #install and configure git user
 brew install git
