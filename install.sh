@@ -4,7 +4,7 @@
 xcode-select --install
 
 #install brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 #install brew programs to this path
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
