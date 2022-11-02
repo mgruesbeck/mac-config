@@ -52,7 +52,7 @@ brew install --cask spotify
 brew install --cask visual-studio-code
 
 #install and configure git user
-brew install gh
+brew install git
 git config --global user.name "Melvin Gruesbeck"
 git config --global user.email "mgruesbeck@gmail.com"
 
