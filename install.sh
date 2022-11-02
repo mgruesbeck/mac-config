@@ -7,7 +7,9 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 #install brew programs to this path
-echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/mgruesbeck/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mgruesbeck/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 #make sure brew is working and is latest
 brew doctor
