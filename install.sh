@@ -18,6 +18,7 @@ brew update
 #install via brew
 brew install ack
 brew install fzf
+brew install gh
 brew install httpie
 brew install jq
 brew install tig
