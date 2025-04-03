@@ -47,7 +47,7 @@ brew install --cask flux
 brew install --cask google-chrome
 brew install --cask sketch
 brew install --cask slack
-brew install --cask spectacle
+brew install --cask rectangle
 brew install --cask spotify
 brew install --cask visual-studio-code
 
